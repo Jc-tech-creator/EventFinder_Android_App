@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Add 8 horizontal LinearLayouts with TextViews -->
+            <include layout="@layout/detail_horizontal_item" android:id="@+id/horizontal_item_1" />
+            <include layout="@layout/detail_horizontal_item" android:id="@+id/horizontal_item_2" />
+            <include layout="@layout/detail_horizontal_item" android:id="@+id/horizontal_item_3" />
+            <include layout="@layout/detail_horizontal_item" android:id="@+id/horizontal_item_4" />
+            <include layout="@layout/detail_horizontal_item" android:id="@+id/horizontal_item_5" />
+            <include layout="@layout/detail_horizontal_item" android:id="@+id/horizontal_item_6" />
+            <include layout="@layout/detail_horizontal_ticket" android:id="@+id/horizontal_item_7" />
+            <include layout="@layout/detail_horizontal_item" android:id="@+id/horizontal_item_8" />
+
+            <!-- Add ImageView at the end -->
+            <ImageView
+                android:id="@+id/seat_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add any other views you need for the TabDetailFragment below -->
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Add 8 horizontal LinearLayouts with TextViews -->
+            <include layout="@layout/venue_horizontal_item" android:id="@+id/horizonVenue_item_1" />
+            <include layout="@layout/venue_horizontal_item" android:id="@+id/horizonVenue_item_2" />
+            <include layout="@layout/venue_horizontal_item" android:id="@+id/horizonVenue_item_3" />
+            <include layout="@layout/venue_horizontal_item" android:id="@+id/horizonVenue_item_4" />
+
+            <!-- Add View of Map here at the end -->
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <include layout="@layout/venue_vertical_item" android:id="@+id/verticalVenue_item_1" />
+            <include layout="@layout/venue_vertical_item" android:id="@+id/verticalVenue_item_2" />
+            <include layout="@layout/venue_vertical_item" android:id="@+id/verticalVenue_item_3" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Add any other views you need for the TabDetailFragment below -->
+
+    </LinearLayout>
+</ScrollView>
