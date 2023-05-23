@@ -1,5 +1,6 @@
 # EventFinder_Android_App
 The URL of video: https://youtu.be/w3JTTJRGzqs
+
 ● It is a good-looking Android app
 
 ● Applied Java, JSON, Android Lifecycle, and RecyclerView in Android Studio for Android app development.
